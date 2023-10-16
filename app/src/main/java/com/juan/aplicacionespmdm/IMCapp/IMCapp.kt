@@ -52,6 +52,7 @@ class IMCapp : AppCompatActivity() {
         initListeners()
         setWeight()
         setAge()
+        print("hola")
 
     }
 
