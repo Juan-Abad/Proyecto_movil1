@@ -12,6 +12,7 @@ import com.juan.aplicacionespmdm.HelloApp.secondActivity
 import com.juan.aplicacionespmdm.R
 import java.lang.Math.pow
 import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
 import kotlin.math.pow
 
 class IMCapp : AppCompatActivity() {
@@ -136,7 +137,10 @@ class IMCapp : AppCompatActivity() {
     private fun setAge() { numEdad.text = currentAge.toString()}
 
     private fun calculateIMC():Double {
+        val dfs = DecimalFormatSymbols()
+        dfs.decimalSeparator = '.'
         val df = DecimalFormat("#.##")
+        df.decimalFormatSymbols = dfs
         val imc = currentWeight / (currentHeight.toDouble() / 100).pow(2.0)
 
         return df.format(imc).toDouble()
