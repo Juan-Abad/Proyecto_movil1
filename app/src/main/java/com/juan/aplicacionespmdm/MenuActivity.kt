@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.juan.aplicacionespmdm.HelloApp.MainActivity
 import com.juan.aplicacionespmdm.IMCapp.IMCapp
+import com.juan.aplicacionespmdm.JuegoMesa.JuegoMesa
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +16,12 @@ class MenuActivity : AppCompatActivity() {
         var btnHelloApp = findViewById<Button>(R.id.btnHelloApp)
         var btnMessageApp = findViewById<Button>(R.id.btnMessageApp)
         var btnIMCapp = findViewById<Button>(R.id.btnIMCapp)
+        var btnJuegoMesa = findViewById<Button>(R.id.btnJuegoMesa)
 
         btnHelloApp.setOnClickListener{navigateToHelloApp()}
         btnMessageApp.setOnClickListener{navigateToMessageSending()}
         btnIMCapp.setOnClickListener{navigateToIMCapp()}
+        btnJuegoMesa.setOnClickListener{navigateToJuegoMesa()}
 
     }
     private fun navigateToHelloApp(){
@@ -31,6 +34,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToIMCapp(){
         var intent = Intent(this, IMCapp::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToJuegoMesa(){
+        var intent = Intent(this, JuegoMesa::class.java)
         startActivity(intent)
     }
 }
