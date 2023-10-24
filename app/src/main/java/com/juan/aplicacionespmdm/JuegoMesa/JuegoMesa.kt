@@ -22,9 +22,9 @@ class JuegoMesa : AppCompatActivity() {
 
     private lateinit var fabAddGame: FloatingActionButton
 
-    private lateinit var etGame: EditText
-    private lateinit var rgCategories: RadioGroup
-    private lateinit var btnAddGame: Button
+    private var etGame: EditText? = null
+    private var rgCategories: RadioGroup? = null
+    private var btnAddGame: Button? = null
 
 
     private val categories = listOf(
@@ -49,15 +49,14 @@ class JuegoMesa : AppCompatActivity() {
         initComponents()
         initUI()
         initListeners()
-
     }
 
     private fun initComponents() {
         rvCategories = findViewById<RecyclerView>(R.id.rvCategories)
         rvGames = findViewById<RecyclerView>(R.id.rvGames)
         fabAddGame = findViewById(R.id.fabAddGame)
-        etGame = findViewById(R.id.etGame)
-        rgCategories = findViewById(R.id.rgCategories)
+        etGame = findViewById<EditText>(R.id.etGame)
+        rgCategories = findViewById<RadioGroup>(R.id.rgCategories)
     }
 
     private fun initUI() {
@@ -68,6 +67,9 @@ class JuegoMesa : AppCompatActivity() {
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         rvCategories.adapter = categoriesAdapter
+
+        rvGames.layoutManager = LinearLayoutManager(this)
+        rvGames.adapter = gamesAdapter
     }
 
     private fun initListeners() {
@@ -103,6 +105,10 @@ class JuegoMesa : AppCompatActivity() {
     }
 
     private fun updateGames() {
+        val selectedCategories: List<GameCategory> = categories.filter { it.isSelected }
+        val newGames = games.filter { selectedCategories.contains(it.category) }
+        gamesAdapter.games = newGames
+
         gamesAdapter.notifyDataSetChanged()
     }
 
@@ -112,7 +118,10 @@ class JuegoMesa : AppCompatActivity() {
     }
 
     private fun onCategorieSelected(position: Int){
+        categories[position].isSelected = !categories[position].isSelected
         categoriesAdapter.notifyItemChanged(position)
+
+        updateGames()
     }
 
 
