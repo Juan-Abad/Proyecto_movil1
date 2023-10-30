@@ -33,10 +33,6 @@ class GamesViewHolder (view: View) : RecyclerView.ViewHolder(view) {
         }
 
         cbGame.isChecked = game.isSelected
-
-        tvGame.text = game.name
-
-        game.isSelected = game.category.isSelected
     }
 
 }
