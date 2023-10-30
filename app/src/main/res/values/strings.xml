@@ -30,4 +30,25 @@
     <string name="dialog_legacy_category">Legacy</string>
 
     <string name="dialog_newgame_button">Nuevo juego</string>
+
+
+    <!--APP: ColorPalette-->
+    <string name="title_tv_ColorPalette">Paleta de colores</string>
+    <string name="btn_color_change">Cambiar de color</string>
+    <string name="Select_bar">Elige una barra</string>
+    <string name="Select_color">Elige un color</string>
+    <string name="btn_apply_color">Aplicar color</string>
+
+        <!--Colors to apply on bar-->
+    <string name="White">Blanco</string>
+    <string name="Red">Rojo</string>
+    <string name="Orange">Naranja</string>
+    <string name="Yellow">Amarillo</string>
+    <string name="Green">Verde</string>
+    <string name="Cyan">Cián</string>
+    <string name="Blue">Azul</string>
+    <string name="Violet">Violeta</string>
+    <string name="Black">Negro</string>
+
+
 </resources>

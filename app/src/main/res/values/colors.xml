@@ -34,4 +34,8 @@
     <color name="bgapp_cooperative_category">#D016F1</color>
     <color name="bgapp_legacy_category">#EDF351</color>
 
+    <!--APP: ColorPallete-->
+    <color name="background_tv_color_pallete">#FF6200EE</color>
+    <color name="btn_color_change">#FF6200EE</color>
+
 </resources>
