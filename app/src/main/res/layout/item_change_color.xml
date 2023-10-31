@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="550dp"
+    android:layout_gravity="center"
+    android:background="@color/bgapp_background_app"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="#00FFFFFF">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Select_bar"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                >
+
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <RadioGroup
+                android:id="@+id/rgBars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_20"
+                    android:checked="true"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="H1 (20%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_50"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="H2 (50%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:theme="@style/RadioButton_80"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="H3 (80%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_20"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="V1 (20%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_35"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="V2 (35%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_50"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="V3 (50%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_65"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="V4 (65%)" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton_80"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="V5 (80%)" />
+
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="25dp"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Select_color"
+                android:textColor="@color/white"
+                android:textSize="17dp">
+
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <RadioGroup
+                android:id="@+id/rgColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_white"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/White" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_red"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Red" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_orange"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Orange" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_yellow"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Yellow" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_green"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Green" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_cyan"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Cyan" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_blue"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Blue" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_violet"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Violet" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButton_black"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"
+                    android:text="@string/Black" />
+
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_applyColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/btn_color_change"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_cvApplyColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/btn_apply_color"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

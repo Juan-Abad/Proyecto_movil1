@@ -11,4 +11,5 @@ class ColorPalette : AppCompatActivity() {
     }
 
 
+
 }
