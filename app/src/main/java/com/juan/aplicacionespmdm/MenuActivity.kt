@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.juan.aplicacionespmdm.ColorPalette.ColorPalette
 import com.juan.aplicacionespmdm.HelloApp.MainActivity
 import com.juan.aplicacionespmdm.IMCapp.IMCapp
 import com.juan.aplicacionespmdm.JuegoMesa.JuegoMesa
@@ -17,11 +18,13 @@ class MenuActivity : AppCompatActivity() {
         var btnMessageApp = findViewById<Button>(R.id.btnMessageApp)
         var btnIMCapp = findViewById<Button>(R.id.btnIMCapp)
         var btnJuegoMesa = findViewById<Button>(R.id.btnJuegoMesa)
+        var btnColorPalette = findViewById<Button>(R.id.btnColorPalette)
 
         btnHelloApp.setOnClickListener{navigateToHelloApp()}
         btnMessageApp.setOnClickListener{navigateToMessageSending()}
         btnIMCapp.setOnClickListener{navigateToIMCapp()}
         btnJuegoMesa.setOnClickListener{navigateToJuegoMesa()}
+        btnColorPalette.setOnClickListener{navigateToColorPalette()}
 
     }
     private fun navigateToHelloApp(){
@@ -38,6 +41,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToJuegoMesa(){
         var intent = Intent(this, JuegoMesa::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToColorPalette(){
+        var intent = Intent(this, ColorPalette::class.java)
         startActivity(intent)
     }
 }

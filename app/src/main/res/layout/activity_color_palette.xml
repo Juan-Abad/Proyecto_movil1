@@ -33,32 +33,67 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitle_color_palette">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_V1"
+            android:id="@+id/cv_H1"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:layout_marginTop="50dp"
             app:cardBackgroundColor="#33F4511E"
-            app:layout_constraintBottom_toEndOf="@+id/layout_components"
             app:layout_constraintStart_toStartOf="@+id/layout_components"
-            app:layout_constraintTop_toTopOf="@+id/layout_components"></androidx.cardview.widget.CardView>
+            app:layout_constraintEnd_toEndOf="@+id/layout_components"
+            app:layout_constraintTop_toTopOf="@+id/layout_components">
+
+            <TextView
+                android:id="@+id/tv_CvH1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:text="H1 (20%)"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_V2"
+            android:id="@+id/cv_H2"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:layout_marginTop="30dp"
             app:cardBackgroundColor="#80CA00FF"
-            app:layout_constraintBottom_toEndOf="@+id/layout_components"
-            app:layout_constraintTop_toBottomOf="@+id/cv_V1"></androidx.cardview.widget.CardView>
+            app:layout_constraintStart_toStartOf="@+id/layout_components"
+            app:layout_constraintEnd_toEndOf="@+id/layout_components"
+            app:layout_constraintTop_toBottomOf="@+id/cv_H1">
+            <TextView
+                android:id="@+id/tv_CvH2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:text="H2 (50%)"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_V3"
+            android:id="@+id/cv_H3"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:layout_marginTop="30dp"
             app:cardBackgroundColor="#CC3949AB"
-            app:layout_constraintBottom_toEndOf="@+id/layout_components"
-            app:layout_constraintTop_toBottomOf="@+id/cv_V2"></androidx.cardview.widget.CardView>
+            app:layout_constraintStart_toStartOf="@+id/layout_components"
+            app:layout_constraintEnd_toEndOf="@+id/layout_components"
+            app:layout_constraintTop_toBottomOf="@+id/cv_H2">
+            <TextView
+                android:id="@+id/tv_CvH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:text="H3 (80%)"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_color_palette"
