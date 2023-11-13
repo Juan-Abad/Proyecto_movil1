@@ -19,6 +19,7 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/title_table_bars"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Select_bar"
@@ -38,6 +39,7 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/rdH1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_20"
@@ -47,6 +49,7 @@
                     android:text="H1 (20%)" />
 
                 <RadioButton
+                    android:id="@+id/rdH2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_50"
@@ -56,6 +59,7 @@
                     android:text="H2 (50%)" />
 
                 <RadioButton
+                    android:id="@+id/rdH3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15dp"
@@ -65,6 +69,7 @@
                     android:text="H3 (80%)" />
 
                 <RadioButton
+                    android:id="@+id/rdV1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_20"
@@ -74,6 +79,7 @@
                     android:text="V1 (20%)" />
 
                 <RadioButton
+                    android:id="@+id/rdV2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_35"
@@ -83,6 +89,7 @@
                     android:text="V2 (35%)" />
 
                 <RadioButton
+                    android:id="@+id/rdV3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_50"
@@ -92,6 +99,7 @@
                     android:text="V3 (50%)" />
 
                 <RadioButton
+                    android:id="@+id/rdV4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_65"
@@ -101,6 +109,7 @@
                     android:text="V4 (65%)" />
 
                 <RadioButton
+                    android:id="@+id/rdV5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/RadioButton_80"
@@ -141,6 +150,7 @@
                 android:layout_height="wrap_content"
                 >
                 <RadioButton
+                    android:id="@+id/rdWhite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -149,6 +159,7 @@
                     android:textSize="15dp"
                     android:text="@string/White" />
                 <RadioButton
+                    android:id="@+id/rdRed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -157,6 +168,7 @@
                     android:textSize="15dp"
                     android:text="@string/Red" />
                 <RadioButton
+                    android:id="@+id/rdOrange"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -165,6 +177,7 @@
                     android:textSize="15dp"
                     android:text="@string/Orange" />
                 <RadioButton
+                    android:id="@+id/rdYellow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -173,6 +186,7 @@
                     android:textSize="15dp"
                     android:text="@string/Yellow" />
                 <RadioButton
+                    android:id="@+id/rdGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -181,6 +195,7 @@
                     android:textSize="15dp"
                     android:text="@string/Green" />
                 <RadioButton
+                    android:id="@+id/rdCyan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -189,6 +204,7 @@
                     android:textSize="15dp"
                     android:text="@string/Cyan" />
                 <RadioButton
+                    android:id="@+id/rdBlue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -197,6 +213,7 @@
                     android:textSize="15dp"
                     android:text="@string/Blue" />
                 <RadioButton
+                    android:id="@+id/rdViolet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -205,6 +222,7 @@
                     android:textSize="15dp"
                     android:text="@string/Violet" />
                 <RadioButton
+                    android:id="@+id/rdBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
