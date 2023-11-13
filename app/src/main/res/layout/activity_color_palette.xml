@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ColorPalette.ColorPalette">
 
     <TextView
@@ -49,6 +50,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="5dp"
                 android:text="H1 (20%)"
+                android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="bold"></TextView>
         </androidx.cardview.widget.CardView>
@@ -69,6 +71,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="5dp"
                 android:text="H2 (50%)"
+                android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="bold"></TextView>
 
@@ -90,6 +93,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="5dp"
                 android:text="H3 (80%)"
+                android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="bold"></TextView>
 
@@ -99,7 +103,6 @@
             android:id="@+id/rv_color_palette"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:orientation="horizontal" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
