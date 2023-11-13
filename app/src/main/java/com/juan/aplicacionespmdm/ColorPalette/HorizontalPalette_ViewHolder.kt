@@ -1,13 +1,11 @@
 package com.juan.aplicacionespmdm.ColorPalette
 
-import android.graphics.Color
 import android.view.View
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.juan.aplicacionespmdm.JuegoMesa.GameCategory
 import com.juan.aplicacionespmdm.R
+
 
 class HorizontalPalette_ViewHolder(view: View) : RecyclerView.ViewHolder(view){
 

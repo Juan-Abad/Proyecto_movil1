@@ -1,6 +1,7 @@
 package com.juan.aplicacionespmdm.ColorPalette
 
 import android.app.Dialog
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -21,7 +22,9 @@ class ColorPalette : AppCompatActivity() {
     private lateinit var cv_changeColor: CardView
 
     private var palette = mutableListOf(
-        Palette("verde", 123, 30)
+        Palette("verde", 0xFF00FF00.toInt(), 20),
+        Palette("azul", 0xFF00FF00.toInt(), 50),
+        Palette("pal", 0xFF00FF00.toInt(), 70)
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
