@@ -28,9 +28,11 @@ class ColorPalette : AppCompatActivity() {
     private lateinit var cv_changeColor: CardView
 
     private var palette = mutableListOf(
-        Palette("verde", 0x33fffd80.toInt(), 20),
-        Palette("azul", 0x80ffc87a.toInt(), 50),
-        Palette("pal", 0xB3fffc33.toInt(), 70)
+        Palette("V1", 0x33fffd80.toInt(), 20),
+        Palette("V2", 0x59ffc87a.toInt(), 35),
+        Palette("V3", 0x80fffc33.toInt(), 50),
+        Palette("V4", 0xA6fffc33.toInt(), 65),
+        Palette("V5", 0xCCfffc33.toInt(), 80)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
