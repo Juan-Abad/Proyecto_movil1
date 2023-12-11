@@ -31,8 +31,8 @@ class ColorPalette : AppCompatActivity() {
         Palette("V1", 0x33fffd80.toInt(), 20),
         Palette("V2", 0x59ffc87a.toInt(), 35),
         Palette("V3", 0x80fffc33.toInt(), 50),
-        Palette("V4", 0xA6fffc33.toInt(), 65),
-        Palette("V5", 0xCCfffc33.toInt(), 80)
+        Palette("V4", 0xA60000FF.toInt(), 65),
+        Palette("V5", 0xCC800080.toInt(), 80)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
