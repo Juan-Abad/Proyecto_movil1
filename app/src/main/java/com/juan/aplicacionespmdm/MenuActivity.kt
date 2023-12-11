@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.juan.aplicacionespmdm.ColorPalette.ColorPalette
+import com.juan.aplicacionespmdm.CuadriculaColores.CuadriculaColores
 import com.juan.aplicacionespmdm.HelloApp.MainActivity
 import com.juan.aplicacionespmdm.IMCapp.IMCapp
 import com.juan.aplicacionespmdm.JuegoMesa.JuegoMesa
@@ -19,12 +20,14 @@ class MenuActivity : AppCompatActivity() {
         var btnIMCapp = findViewById<Button>(R.id.btnIMCapp)
         var btnJuegoMesa = findViewById<Button>(R.id.btnJuegoMesa)
         var btnColorPalette = findViewById<Button>(R.id.btnColorPalette)
+        var btnCuadriculaColores = findViewById<Button>(R.id.btnCuadriculaColores)
 
         btnHelloApp.setOnClickListener{navigateToHelloApp()}
         btnMessageApp.setOnClickListener{navigateToMessageSending()}
         btnIMCapp.setOnClickListener{navigateToIMCapp()}
         btnJuegoMesa.setOnClickListener{navigateToJuegoMesa()}
         btnColorPalette.setOnClickListener{navigateToColorPalette()}
+        btnCuadriculaColores.setOnClickListener{navigateToCuadriculaColores()}
 
     }
     private fun navigateToHelloApp(){
@@ -45,6 +48,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToColorPalette(){
         var intent = Intent(this, ColorPalette::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToCuadriculaColores(){
+        var intent = Intent(this, CuadriculaColores::class.java)
         startActivity(intent)
     }
 }

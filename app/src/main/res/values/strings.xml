@@ -39,7 +39,7 @@
     <string name="Select_color">Elige un color</string>
     <string name="btn_apply_color">Aplicar color</string>
 
-        <!--Colors to apply on bar-->
+    <!--Colors to apply on bar--> <!--Used in CuadriculaColores APP-->
     <string name="White">Blanco</string>
     <string name="Red">Rojo</string>
     <string name="Orange">Naranja</string>
@@ -48,6 +48,7 @@
     <string name="Cyan">Cián</string>
     <string name="Blue">Azul</string>
     <string name="Violet">Violeta</string>
+    <string name="Grey">Gris</string>
     <string name="Black">Negro</string>
 
 
