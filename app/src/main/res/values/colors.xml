@@ -38,4 +38,17 @@
     <color name="background_tv_color_pallete">#FF6200EE</color>
     <color name="btn_color_change">#FF6200EE</color>
 
+    <!--APP: CuadriculaColores-->
+    <color name="CC_blanco">#FFFFFF</color>
+    <color name="CC_rojo">#FF0000</color>
+    <color name="CC_naranja">#FFA500</color>
+    <color name="CC_amarillo">#FFFF00</color>
+    <color name="CC_verde">#00FF00</color>
+    <color name="CC_cian">#00FFFF</color>
+    <color name="CC_azul">#0000FF</color>
+    <color name="CC_violeta">#B61EB6</color>
+    <color name="CC_gris">#808080</color>
+    <color name="CC_negro">#000000</color>
+
+
 </resources>

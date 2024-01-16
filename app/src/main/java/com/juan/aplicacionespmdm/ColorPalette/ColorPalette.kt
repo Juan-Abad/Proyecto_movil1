@@ -89,9 +89,6 @@ class ColorPalette : AppCompatActivity() {
 
             val a = dialog.findViewById<TextView>(R.id.title_table_bars)
 
-            if (rdBarsSelectedRadioButton.id.equals(tv_CvH1.id)) {
-                a.setText("1")
-            }
             var colorFondo: String = ""
 
             when (rdColorsSelectedRadioButton.text) {
