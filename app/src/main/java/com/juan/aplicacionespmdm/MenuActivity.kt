@@ -8,6 +8,7 @@ import com.juan.aplicacionespmdm.ColorPalette.ColorPalette
 import com.juan.aplicacionespmdm.HelloApp.MainActivity
 import com.juan.aplicacionespmdm.IMCapp.IMCapp
 import com.juan.aplicacionespmdm.JuegoMesa.JuegoMesa
+import com.juan.aplicacionespmdm.SuperheroApp.SuperheroListActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,13 +20,14 @@ class MenuActivity : AppCompatActivity() {
         var btnIMCapp = findViewById<Button>(R.id.btnIMCapp)
         var btnJuegoMesa = findViewById<Button>(R.id.btnJuegoMesa)
         var btnColorPalette = findViewById<Button>(R.id.btnColorPalette)
+        var btnSuperheroApp = findViewById<Button>(R.id.btnSuperheroApp)
 
         btnHelloApp.setOnClickListener{navigateToHelloApp()}
         btnMessageApp.setOnClickListener{navigateToMessageSending()}
         btnIMCapp.setOnClickListener{navigateToIMCapp()}
         btnJuegoMesa.setOnClickListener{navigateToJuegoMesa()}
         btnColorPalette.setOnClickListener{navigateToColorPalette()}
-
+        btnSuperheroApp.setOnClickListener{navigateToSuperheroApp()}
     }
     private fun navigateToHelloApp(){
         var intent = Intent(this, MainActivity::class.java)
@@ -45,6 +47,10 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navigateToColorPalette(){
         var intent = Intent(this, ColorPalette::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToSuperheroApp(){
+        var intent = Intent(this, SuperheroListActivity::class.java)
         startActivity(intent)
     }
 }
