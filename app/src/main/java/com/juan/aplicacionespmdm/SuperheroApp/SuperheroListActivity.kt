@@ -17,7 +17,7 @@ class SuperheroListActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySuperHeroListBinding
     private lateinit var retrofit: Retrofit
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {WW
         super.onCreate(savedInstanceState)
         binding = ActivitySuperHeroListBinding.inflate(layoutInflater)
         setContentView(binding.root)
